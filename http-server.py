@@ -10,7 +10,7 @@ Hello #{} from MicroPython!
 ai = socket.getaddrinfo("192.168.1.235",8080)
 addr = ai[0][4]
 
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM, 1)
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind(addr)
 s.listen(5)
 counter=0
